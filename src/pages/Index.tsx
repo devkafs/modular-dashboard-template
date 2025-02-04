@@ -7,31 +7,31 @@ const Index = () => {
     <MainLayout>
       <div className="space-y-6">
         <div>
-          <h1 className="text-3xl font-bold">Selamat Datang</h1>
+          <h1 className="text-3xl font-bold">Welcome</h1>
           <p className="text-muted-foreground mt-2">
-            Template dashboard modular dengan navigasi fleksibel
+            Modular dashboard template with flexible navigation
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-2">Navigasi Fleksibel</h3>
+            <h3 className="text-lg font-semibold mb-2">Flexible Navigation</h3>
             <p className="text-muted-foreground">
-              Pilih antara Sidebar atau Headerbar sesuai preferensi Anda
+              Choose between Sidebar or Header navigation based on your preference
             </p>
           </Card>
           
           <Card className="p-6">
-            <h3 className="text-lg font-semibold mb-2">Responsif</h3>
+            <h3 className="text-lg font-semibold mb-2">Responsive</h3>
             <p className="text-muted-foreground">
-              Tampilan yang optimal di berbagai ukuran layar
+              Optimal display across various screen sizes
             </p>
           </Card>
           
           <Card className="p-6">
             <h3 className="text-lg font-semibold mb-2">Modular</h3>
             <p className="text-muted-foreground">
-              Struktur kode yang rapi dan mudah dikembangkan
+              Clean code structure that's easy to maintain and expand
             </p>
           </Card>
         </div>

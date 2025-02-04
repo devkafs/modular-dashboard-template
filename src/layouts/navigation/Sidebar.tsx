@@ -1,13 +1,9 @@
 
-import { Menu, X, Home, Settings, ChevronLeft } from 'lucide-react';
+import { Menu, X, Home, Settings } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-interface SidebarProps {
-  onChangeNav: () => void;
-}
-
-const Sidebar = ({ onChangeNav }: SidebarProps) => {
+const Sidebar = () => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
@@ -31,7 +27,7 @@ const Sidebar = ({ onChangeNav }: SidebarProps) => {
               className="flex items-center p-2 hover:bg-accent rounded-md transition-colors"
             >
               <Home size={20} />
-              {!collapsed && <span className="ml-3">Beranda</span>}
+              {!collapsed && <span className="ml-3">Home</span>}
             </Link>
           </li>
           <li>
@@ -40,21 +36,11 @@ const Sidebar = ({ onChangeNav }: SidebarProps) => {
               className="flex items-center p-2 hover:bg-accent rounded-md transition-colors"
             >
               <Settings size={20} />
-              {!collapsed && <span className="ml-3">Pengaturan</span>}
+              {!collapsed && <span className="ml-3">Settings</span>}
             </Link>
           </li>
         </ul>
       </nav>
-
-      <div className="absolute bottom-4 w-full px-4">
-        <button
-          onClick={onChangeNav}
-          className="w-full flex items-center justify-center p-2 hover:bg-accent rounded-md transition-colors"
-        >
-          <ChevronLeft size={20} />
-          {!collapsed && <span className="ml-2">Ganti ke Headerbar</span>}
-        </button>
-      </div>
     </aside>
   );
 };
