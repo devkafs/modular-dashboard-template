@@ -20,7 +20,7 @@ const MainLayout = ({ children, navType = 'sidebar', onChangeNav }: MainLayoutPr
   };
 
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex bg-background text-foreground transition-colors">
       {localNavType === 'sidebar' ? (
         <>
           <Sidebar />
