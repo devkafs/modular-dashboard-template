@@ -1,13 +1,42 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import MainLayout from '../layouts/MainLayout';
+import { Card } from '@/components/ui/card';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <MainLayout>
+      <div className="space-y-6">
+        <div>
+          <h1 className="text-3xl font-bold">Selamat Datang</h1>
+          <p className="text-muted-foreground mt-2">
+            Template dashboard modular dengan navigasi fleksibel
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <Card className="p-6">
+            <h3 className="text-lg font-semibold mb-2">Navigasi Fleksibel</h3>
+            <p className="text-muted-foreground">
+              Pilih antara Sidebar atau Headerbar sesuai preferensi Anda
+            </p>
+          </Card>
+          
+          <Card className="p-6">
+            <h3 className="text-lg font-semibold mb-2">Responsif</h3>
+            <p className="text-muted-foreground">
+              Tampilan yang optimal di berbagai ukuran layar
+            </p>
+          </Card>
+          
+          <Card className="p-6">
+            <h3 className="text-lg font-semibold mb-2">Modular</h3>
+            <p className="text-muted-foreground">
+              Struktur kode yang rapi dan mudah dikembangkan
+            </p>
+          </Card>
+        </div>
       </div>
-    </div>
+    </MainLayout>
   );
 };
 
